@@ -1,334 +1,197 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Project 5</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="styles.css" rel="Stylesheet" type="text/css" />
-    </head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Project 6</title>
+  <!--Libraries-->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
+  <link href="styles.css" type="text/css" rel="Stylesheet"/>
 
-    <body>
-        <header>
-            <div class="flex">
-                <div class="logo">
-                    <h3><span>IG</span>ames</h3>
-                </div>
-                <nav>
-                    <button id="nav-toggle" class="hamburger-menu">
-                        <span class="strip"></span>
-                        <span class="strip"></span>
-                        <span class="strip"></span>
-                    </button>
-                    <ul id="nav-menu-container">
-                        <li><a href="#home-image">Home</a></li>
-                        <li><a href="#game-types-boxes">Cooming soon</a></li>
-                        <li><a href="#recent-games">New</a></li>
-                        <li><a href="#recent-reviews">Reviews</a></li>
-                        <li><a href="#contact-us">About</a></li>
-                        <li><a href="#posts-comments">Comments</a></li>
-                    </ul>
-                </nav>
-                
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/95dc93da07.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section id="home">
+    <header>
+      <div class="container">
+        <div id="header-logo-mobile" class="top-gym-logo">
+          <a href="#">top<br/>Gym</a>
+        </div>
+
+        <nav>
+          <ul class="flex">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li id="header-logo" class="top-gym-logo">
+              <a href="#">top<br/>Gym</a>
+            </li>
+            <li><a href="#">Trainers</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Contact</a></li>
+            <li>
+              <button id="search"><span class="fa fa-search"></span></button>
+            </li>
+          </ul>
+        </nav>
+
+        <button id="hamburger-menu">
+          <span class="strip"></span>
+          <span class="strip"></span>
+          <span class="strip"></span>
+        </button>
+      </div>
+    </header>
+
+    <div id="home-slider">
+      <div class="home-slide-item" style="background-image:url('images/slider1.jpg');">
+        <div class="home-slider-text">
+          <h2>Exercise</h2>
+          <button>About Us</button>
+        </div>
+      </div>
+
+      <div class="home-slide-item" style="background-image:url('images/slider2.jpg');">
+        <div class="home-slider-text">
+          <h2>Be Healthy</h2>
+          <button>About Us</button>
+        </div>
+      </div>
+
+      <div class="home-slide-item" style="background-image:url('images/slider3.jpg');">
+        <div class="home-slider-text">
+          <h2>Stay Fit</h2>
+          <button>About Us</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="features">
+    <div class="flex container">
+      <div class="box">
+        <img src="images/feature1.jpg" alt="cas" />
+        <div class="feature-info-container">
+          <div class="icon">
+            <img src="images/icon1.png" alt="trofej" />
+          </div>
+          <h4>Amazing Setting</h4>
+          <p>Our Gym contains a range of fitness equipment, from free weights, cardio machines, resistance machines and functional items.</p>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="images/feature2.jpg" alt="coek" />
+        <div class="feature-info-container">
+          <div class="icon">
+            <img src="images/icon2.png" alt="teg" />
+          </div>
+          <h4>Best Trainers</h4>
+          <p>Our employees are certified, profesional, and have lots of experiance dealing with newcomers and experianced lifters.</p>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="images/feature3.jpg" alt="treba" />
+        <div class="feature-info-container">
+          <div class="icon">
+            <img src="images/icon3.png" alt="sejk" />
+          </div>
+          <h4>Diet Plans</h4>
+          <p>We provide costumized diet plans for a veriety of outcomes. There is no need to measure calories and grams, we do that for You.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <h3>Services</h3>
+    <div class="flex container">
+      <div class="box">
+        <img src="images/lopta.png" alt="lopta" />
+        <h4>Pilates</h4>
+        <p>Pilates is a method of exercise that consists of low-impact flexibility and muscular strength and endurance movements.</p>
+      </div>
+
+      <div class="box">
+        <img src="images/tegovi.png" alt="tegovi" />
+        <h4>Lifting</h4>
+        <p>Our Facilities posses a veriety of weights. The best equipment you can find is right here.</p>
+      </div>
+
+      <div class="box">
+        <img src="images/sat.png" alt="sat" />
+        <h4>Yoga</h4>
+        <p>Scheduled yoga classes for all members. We also provide a free mat for you to expercise and practise at home.</p>
+      </div>
+
+      <div class="box">
+        <img src="images/sluse.png" alt="sluse" />
+        <h4>Cycling</h4>
+        <p>Train your endurance, strength, and agility wit high intensity. Sign up for our scheduled cycling classes our use machines in our gyms. </p>
+      </div>
+    </div>
+    
+
+    <button>See All Services</button>
+
+  </section>
+
+    <section id="trainers">
+        <h5>The Best</h5>
+        <h3>Trainers</h3>
+        <div class="flex">
+            <div class="trainer-item">
+            <img src="images/trener1.jpg" alt="Amanda nunes" />
+            <h4>Amanda Nunes</h4>
+            <p>Aerobics Instructor</p>
             </div>
-        </header>
 
-        <main>
-
-            <section id="home-image">
-                <div class="home-text">
-                    <h1>Best <span>Game Review`s</span> Out There</h1>
-                    <h5>Best site the see ALL the latest news about games. This site provides information about upcoming and already relesead games on the market. Comments and reviews are left by professionals. Join our website and get the latest post about your favorite games. </h5>
-                    <button>Read More</button>
-                </div>
-            </section>
-
-            <section id="latest-news">
-                <div class="flex">
-                    <h5>Latest News</h5>
-                    <div id="latest-news-container">
-                        <div class="latest-news-item">
-                            <marquee behavior="" direction="right"><span class="latest-news-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam facilis voluptates nemo doloribus! Minima eveniet officiis ea, veritatis rerum labore totam ab error architecto? Voluptatum aspernatur libero voluptas minus animi.</span></marquee>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="game-types-boxes">
-                <div class="flex">
-                    <div class="box new">
-                        <div class="shade"></div>
-                        <span class="badge new">Comming soon</span>
-                        <div class="contents">
-                            <div class="grow">
-                            <h4>Darkest Dungeon</h4>
-                            <p>Darkest Dungeon is an upcoming role-playing  dungeon crovler vidio game developet by Red Hook Studios.</p>
-                            <a href="#" class="comments">5 Comments</a>
-                        </div>
-                        </div>
-                    </div>
-
-                    <div class="box strategy">
-                        <div class="shade"></div>
-                        <span class="badge strategy">Comming soon</span>
-                        <div class="contents">
-                            <div class="grow">
-                            <h4>Hades</h4>
-                            <p>Hades is an upcoming roguelike action role-playing video game developed and published by Supergiant Games.</p>
-                            <a href="#" class="comments">12 Comments</a>
-                        </div>
-                        </div>
-                    </div>
-
-                    <div class="box rpg">
-                        <div class="shade"></div>
-                        <span class="badge rpg">Comming soon</span>
-                        <div class="contents">
-                            <div class="grow">
-                            <h4>Carto</h4>
-                            <p>Carto is an upcoming charming adventure wrapped around a unique, world-altering puzzle mechanic.</p>
-                            <a href="#" class="comments">0 Comments</a>
-                        </div>
-                        </div>
-                    </div>
-
-                    <div class="box racing">
-                        <div class="shade"></div>
-                        <span class="badge racing">Comming soon</span>
-                        <div class="contents">
-                            <div class="grow">
-                            <h4>Disco Elysium</h4>
-                            <p>Disco Elysium is an upcoming role-playing video game developed and published by ZA/UM.</p>
-                            <a href="#" class="comments">2 Comments</a>
-                        </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="recent-games">
-                <h1>Recent Release`s</h1>
-                <br>
-                <br>
-                <div class="flex">
-                    <div class="box">
-                        <span class="badge new">New</span>
-                        <img src="images/spel.jpg" />
-                        <div class="box-lower-section">
-                            <div class="grow">
-                            <h4>Spelunky</h4>
-                            <p>Spelunky is a source-available indie 2D platform video game created by Derek Yu and released as freeware for Microsoft Windows.</p>
-                            <a href="#" class="comments">5 Comments</a>
-                        </div>
-                    </div>
-                        
-                    </div>
-                    
-                    <div class="box">
-                        
-                        <span class="badge racing">Action</span>
-                        <img src="images/cuphead2.jpg" />
-                        <div class="box-lower-section">
-                            <div class="grow">
-                            <h4>Cuphead</h4>
-                            <p>Cuphead is the newest release of a run and gun video game developed and published by Studio MDHR.</p>
-                            <a href="#" class="comments">17 Comments</a>
-                        </div>
-                        </div>
-                    
-                    </div>
-                
-
-                    <div class="box">
-                        <span class="badge adventure">Adventure</span>
-                        <img src="images/knight.jpg" />
-                        <div class="box-lower-section">
-                            <div class="grow">
-                            <h4>Hollow Knight</h4>
-                            <p>Hollow Knight is a action-adventure game developed and published by Team Cherry.</p>
-                            <a href="#" class="comments">15 Comments</a>
-                        </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-           
-
-            <section id="recent-reviews">
-                <h1>Recent Reviews</h1>
-                <div class="flex">
-                    <div class="box">
-                        <span class="rating-badge gold">9.3</span>
-                        <div class="recent-reviews-image">
-                            <img src="images/asasin.jpg" />
-                        </div>
-                        <div>
-                            <h4>Assasinss Creed</h4>
-                            
-                        </div>
-                    </div>
-
-                    <div class="box">
-                        <span class="rating-badge purple">9.5</span>
-                        <div class="recent-reviews-image">
-                            <img src="images/doom.jpg" />
-                        </div>
-                        <div>
-                            <h4>DOOM</h4>
-            
-                        </div>
-                    </div>
-
-                    <div class="box">
-                        <span class="rating-badge green">9.1</span>
-                        <div class="recent-reviews-image">
-                            <img src="images/over.jpg" />
-                        </div>
-                        <div>
-                            <h4>Overwatch</h4>
-                            
-                        </div>
-                    </div>
-
-                    <div class="box">
-                        <span class="rating-badge violet">9.7</span>
-                        <div class="recent-reviews-image">
-                            <img src="images/gta.jpg" />
-                        </div>
-                        <div>
-                            <h4>Grand Theft Auto V</h4>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section id = "contact-us"> 
-                <div class="flex"> 
-                    <div class="contact-text">
-                        <h3>About Us</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta iste autem accusantium expedita officia odio odit perspiciatis velit neque dolor? Quos eaque distinctio repudiandae adipisci tenetur, consectetur dignissimos corporis maiores! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum commodi quia nobis quibusdam reiciendis voluptatum amet nostrum, officiis explicabo illo, praesentium magni laboriosam labore numquam excepturi accusantium, dolorem cum maiores.</p>
-                    </div>
-                    <div class="form"> 
-                        <form>
-                            <label for="name">Name:</label><br>
-                            <input type="text"  name="name"><br>
-                            <label for="email">Email:</label><br>
-                            <input type="text"  name="email"><br>
-                            <label for="msg">Subject:</label><br>
-                            <input type="text" name="msg"><br>
-                            <input  type="submit" value="Send" name="Submit" class="button">  
-                        </form>
-                    </div>
-                </div>
-            </section>
-
-            <section id="posts-comments">
-                <div class="flex">
-                    <div class="posts-comments-box">
-                        <h3>Latest Posts</h3>
-                        <div class="post-item">
-                            <img src="images/wow.jpg" />
-                            <div>
-                                <h5>10 / 1 / 2021</h5>
-                                <p>New map section implemented in patch 9.12</p>
-                                <small>By: Blizard Games Inc.</small>
-                            </div>
-                        </div>
-
-                        <div class="post-item">
-                            <img src="images/far.jpg" />
-                            <div>
-                                <h5>3 / 17 / 2021</h5>
-                                <p>NEW DLC "Blood-Dragon" comming out next friday</p>
-                                <small>By: Ubisoft Games</small>
-                            </div>
-                        </div>
-
-                        <div class="post-item">
-                            <img src="images/siege.jpg" />
-                            <div>
-                                <h5>7 / 7 / 2021</h5>
-                                <p>Bug fixes, New opeartor, server improvements, and more...</p>
-                                <small>By: Ubisoft Games</small>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="posts-comments-box">
-                        <h3>Top Comments</h3>
-                        <div class="comments-item">
-                            <img src="images/avatarm.jpg" />
-                            <div>
-                                <p><span class="author">Ramlah Hubert</span> <span>on</span> Baldur's Gate III</p>
-                                <h5>5 / 1 / 2021</h5>
-                                <p><span>At: 16:26</span></p>
-                            </div>
-                        </div>
-
-                        <div class="comments-item">
-                            <img src="images/avatarm.jpg" />
-                            <div>
-                                <p><span class="author">Eadwig Prinz</span> <span>on</span> Saintz Row IV</p>
-                                <h5>5 / 17 / 2021</h5>
-                                <p><span>At: 02:55</span></p>
-                            </div>
-                        </div>
-
-                        <div class="comments-item">
-                            <img src="images/avatarf.jpg" />
-                            <div>
-                                <p><span class="author">Sandra Low</span> <span>on</span> Spelunky</p>
-                                <h5>2 / 7 / 2021</h5>
-                                <p><span>At: 22:36</span></p>
-                            </div>
-                        </div>
-
-                        <div class="comments-item">
-                            <img src="images/avatarm.jpg" />
-                            <div>
-                                <p><span class="author">Tristan Rivero</span> <span>on</span> Hollow Knight</p>
-                                <h5>3 / 17 / 2021</h5>
-                                <p><span>At: 10:06</span></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="posts-comments-box">
-                        <h3>Post a Comment</h3>
-                        <div class="cform">
-                            <form>
-                                <label for="name">Username / E-mail:</label>
-                                <input type="text"  name="by">
-                                <label for="name">Comment:</label>
-                                <input class="comment" type="text"  name="comment">                              
-                                <input  type="submit" value="Post" name="submit" class="button">
-                                
-                            </form>
-                        </div>
-                        
-                    </div>
-                </div>
-            </section>
-
-        </main>
-
-        <footer>
-            <div class="flex">
-                <small>Project 5 / Gaming Website</small>
-                <ul>
-                    <li><a href="#home-image">Home</a></li>
-                    <li><a href="#game-types-boxes">Cooming soon</a></li>
-                    <li><a href="#recent-games">New</a></li>
-                    <li><a href="#recent-reviews">Reviews</a></li>
-                    <li><a href="#contactus">About</a></li>
-                    <li><a href="#posts-comments">Comments</a></li>
-                </ul>
+            <div class="trainer-item">
+            <img src="images/trener2.jpg" alt="Lyoto machida" />
+            <h4>lyoto Machida</h4>
+            <p>Pilates Instructor</p>
             </div>
-        </footer>
 
-        <script>
-            document.getElementById('nav-toggle').addEventListener('click', function () {
-                let navMenu = document.getElementById('nav-menu-container');
-                navMenu.style.display = navMenu.offsetParent === null ? 'block' : 'none';
-            });
-        </script>
-    </body>
+            <div class="trainer-item">
+            <img src="images/trener3.jpg" alt="Anderson silva" />
+            <h4>Anderson Silva</h4>
+            <p>Strength Training Coach</p>
+            </div>
+        
+        </div>
+  </section>
+
+    <footer>
+      <div class="flex">
+          <small>Project 6 / Fitness Website</small>
+          <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Classes</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Trainers</a></li>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Contact</a></li>
+          </ul>
+      </div>
+  </footer> 
+  
+  <div id="search-container">
+    <span id="search-container-hide" class="fa fa-times"></span>
+    <h3>Search</h3>
+    <div class="search-container-input">
+      <input type="text" name="search" placeholder="Search this site" />
+      <button>Search</button>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+
+</body>
 </html>
